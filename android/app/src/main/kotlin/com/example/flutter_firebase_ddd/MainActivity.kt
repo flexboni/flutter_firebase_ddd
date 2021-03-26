@@ -1,4 +1,4 @@
-package com.example.flutter_firebase_ddd
+package com.flexboni.flutter_note_app
 
 import io.flutter.embedding.android.FlutterActivity
 
