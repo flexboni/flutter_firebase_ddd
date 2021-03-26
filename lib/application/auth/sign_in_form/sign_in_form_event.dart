@@ -1,7 +1,7 @@
 part of 'sign_in_form_bloc.dart';
 
 @freezed
-abstract class SignInFormEvent with _$SignInformEvent {
+abstract class SignInFormEvent with _$SignInFormEvent {
   // Notice that these events take in "raw" unvalidated Strings.
   const factory SignInFormEvent.emailChanged(String emailStr) = EmailChanged;
   const factory SignInFormEvent.passwordChanged(String passwordStr) =
@@ -10,6 +10,6 @@ abstract class SignInFormEvent with _$SignInformEvent {
       RegisterWithEmailAndPasswordPressed;
   const factory SignInFormEvent.signInWithEmailAndPasswordPressed() =
       SignInWithEmailAndPasswordPressed;
-  const factory SignInformEvent.signInWithGooglePressed() =
+  const factory SignInFormEvent.signInWithGooglePressed() =
       SignInWithGooglePressed;
 }
