@@ -7,6 +7,9 @@ abstract class ValueObject<T> {
   const ValueObject();
   Either<ValueFailure<T>, T> get value;
 
+  bool isValid() => value
+      .isRight(); // myEmailAddress.value.isRight() == myEmailAddress.isValid()
+
   @override
   bool operator ==(Object o) {
     if (identical(this, 0)) return true;
